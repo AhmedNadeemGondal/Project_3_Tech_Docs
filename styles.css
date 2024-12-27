@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", "Open Sans", Arial, sans-serif;
+  display: flex;
+}
+code,
+pre {
+  font-family: "Fira Code", "Source Code Pro", monospace;
+}
+#navbar {
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  min-width: 310px;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+#navbar header {
+  text-align: center;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+}
+
+#navbar ul {
+  /* height: 96%; */
+  padding: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar ul a {
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+  color: black;
+  background: rgb(230, 211, 248);
+}
+#navbar ul a:hover {
+  background: rgb(157, 86, 223);
+}
+
+#main-doc {
+  padding: 2rem 2rem 0rem 2rem;
+  margin-right: 5rem;
+}
+#main-doc header {
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 1.5rem 0;
+}
+#main-doc p {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+#main-doc ul {
+  margin-top: 1rem;
+}
+
+#main-doc li {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+code {
+  display: block; /* Or use 'block' */
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: rgba(0, 22, 22, 0.5);
+}
+
+@media screen and (max-width: 1000px) {
+  #main-doc {
+    position: absolute;
+    left: 10px;
+  }
+  #navbar {
+    display: none;
+    min-width: 0;
+    width: 0;
+  }
+}
